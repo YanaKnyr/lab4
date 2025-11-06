@@ -142,6 +142,11 @@ main.content {
  font-size: 22px;
  color: #555; 
 cursor: pointer; 
+transition: color 0.2s;
+}
+
+header:hover::after {
+  color: #0d6efd;
 }
 
   main.content {
@@ -204,6 +209,7 @@ cursor: pointer;
     font-size: 14px;
   }
 }
+
 
 
 
