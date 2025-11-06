@@ -88,7 +88,6 @@ main.content {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
 }
 
-/* Вікно з текстом */
 .content-text {
   position: absolute;
   top: 200px;
@@ -162,9 +161,8 @@ cursor: pointer;
    .image-back {
   position: absolute;
   top: 10%; 
-  left: 60%;
-  transform: translateX(-50%); 
-  width: 80%;
+  left: 25%; 
+  width: 65%;
   max-width: 350px;
   height: auto;
   border-radius: 4px;
@@ -175,8 +173,7 @@ cursor: pointer;
 .image-front {
   position: absolute; 
   top: 30%; 
-  left: 30%;
-  transform: translateX(-50%); 
+  left: 10%;
   width: 40%;
   max-width: 350px;
   height: auto;
@@ -187,9 +184,8 @@ cursor: pointer;
 
 .content-text {
   position: absolute; 
-  top: 65%; 
-  left: 60%;
-  transform: translateX(-50%);
+  top: 55%; 
+  left: 30%;
   width: 100%;
   max-width: 250px;
   background-color: #2f7ccf;
@@ -200,8 +196,6 @@ cursor: pointer;
   text-align: left;
   z-index: 3;
 }
-
-
   .content-text h1 {
     font-size: 20px;
   }
@@ -210,5 +204,6 @@ cursor: pointer;
     font-size: 14px;
   }
 }
+
 
 
