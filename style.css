@@ -185,7 +185,7 @@ cursor: pointer;
 .content-text {
   position: absolute; 
   top: 55%; 
-  left: 30%;
+  left: 25%;
   width: 100%;
   max-width: 250px;
   background-color: #2f7ccf;
@@ -204,6 +204,7 @@ cursor: pointer;
     font-size: 14px;
   }
 }
+
 
 
 
