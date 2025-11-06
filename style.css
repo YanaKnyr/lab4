@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #f7f9fc;
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+
+.logo { 
+font-size: 22px; 
+font-weight: bold; 
+color: #999;
+margin-right: 100px;
+ }
+
+nav ul {
+  display: flex;
+  gap: 35px;
+}
+
+nav a {
+  color: #555;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #0d6efd;
+}
+
+main.content {
+  position: relative;
+  background: linear-gradient(#e9eff5 55%, #ffffff 45%);
+  padding: 90px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-images {
+  position: relative;
+  width: 780px; 
+  height: 440px;
+}
+
+.image-back {
+  position: absolute;
+  top: 0;
+  left: 220px;
+  width: 440px;  
+  height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.image-front {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 280px; 
+  height: 370px; 
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+}
+
+/* Вікно з текстом */
+.content-text {
+  position: absolute;
+  top: 200px;
+  left: 490px;
+  background-color: #2f7ccf;
+  color: #fff;
+  padding: 30px 38px;
+  border-radius: 4px;
+  width: 330px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.content-text h1 {
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.content-text p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.content-text .btn {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 8px 20px;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+
+.content-text .btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+@media (max-width: 600px) {
+  header {
+    padding: 15px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  header::after {
+ content: "☰";
+ font-size: 22px;
+ color: #555; 
+cursor: pointer; 
+}
+
+  main.content {
+    padding: 50px 0;
+  }
+
+  .content-images {
+    width: 90%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    gap: 20px;
+  }
+
+   .image-back {
+  position: absolute;
+  top: 10%; 
+  left: 60%;
+  transform: translateX(-50%); 
+  width: 80%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1; 
+}
+
+.image-front {
+  position: absolute; 
+  top: 30%; 
+  left: 30%;
+  transform: translateX(-50%); 
+  width: 40%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.22);
+  z-index: 2; 
+}
+
+.content-text {
+  position: absolute; 
+  top: 65%; 
+  left: 60%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 250px;
+  background-color: #2f7ccf;
+  color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+  text-align: left;
+  z-index: 3;
+}
+
+
+  .content-text h1 {
+    font-size: 20px;
+  }
+
+  .content-text p {
+    font-size: 14px;
+  }
+}
+
+
