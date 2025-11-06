@@ -186,7 +186,7 @@ cursor: pointer;
   position: absolute; 
   top: 55%; 
   left: 25%;
-  width: 100%;
+  width: 80%;
   max-width: 250px;
   background-color: #2f7ccf;
   color: #fff;
@@ -204,6 +204,7 @@ cursor: pointer;
     font-size: 14px;
   }
 }
+
 
 
 
